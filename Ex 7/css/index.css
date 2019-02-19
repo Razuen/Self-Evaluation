@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    font-family: 'Lato', sans-serif;
+    background: rgb(203,212,223);
+}
+/*-- -----------START :: HEADER---------------- */
+header {
+    background: rgb(42,163,240);
+    text-align: center;
+}
+header img{
+    height: 60px;
+    width: 60px; 
+}
+/*-- -----------END :: HEADER---------------- --*/
+section{
+    position: relative;
+}
+/*  -----------START :: COVER-PICTURE---------------- */
+.cover-picture img{
+    height:320px;
+    width: 100%;
+
+}
+.cover-picture button{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(42,163,240);
+    padding: 10px 50px;
+    font-size: 14px;
+    color: white;
+    border: none;
+}
+
+/*  -----------END :: COVER-PICTURE---------------- */
+.cover-picture button i, .location h4 i , .dob h4 i{
+    margin-right: 5px;
+}
+/*  -----------START :: PROFILE-PICTURE---------------- */
+.profile-picture{
+    position: absolute;
+    bottom:-225px;
+    left: 75px;   
+}
+.profile-picture img{
+    height: 170px;
+    width: 170px;
+}
+
+/*  -----------END :: PROFILE-PICTURE---------------- */
+/*  -----------START :: WALL---------------- */
+.wall {
+    margin: 30px 30px 0 269px;  
+}
+/*  -----------END :: WALL---------------- */
+/*  -----------START :: MY-PROFILE---------------- */
+.my-profile{
+    width: 200px;
+    padding:10px 0;
+}
+.my-profile h4{
+    font-weight: 300;
+}
+.name , .profile-name , .description , .location , .dob{
+    margin: 6px 0;
+}
+.profile-name{
+    color:gray;
+}
+/*  -----------END :: MY-PROFILE---------------- */
+/* --------------START :: FEED-LIST--------------------- */
+.feed-list {
+    width: 60%;
+    float: left;
+}
+
+/* --------------END :: FEED-LIST--------------------- */
+/* --------------START :: POST--------------- */
+.post{
+    position: relative;
+    float: left;
+    display: block;
+    width: 100%;
+}
+.post textarea {
+    display: block;
+    height: 200px;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    resize: none;
+    font-size: 15px;
+    
+}
+.post button{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 17%;
+    background: rgb(42,163,240);
+    padding: 6px 12px;
+    font-size: 14px;
+    color: white;
+    border: none; 
+}
+
+/* --------------END :: POST--------------- */
+
+/* --------------START :: FEED--------------- */
+.feed {
+    
+    margin: 3% 0 0;
+    background: white;
+}
+.feed-image{
+    display: block;
+    width: 50px;
+    height: 70px;
+    float: left;
+    margin: 10px 0 10px 10px;
+}
+.feed-image img{ 
+    height: 70px; 
+    float: left;
+}
+.content{
+    display: block;
+    width: calc(100% - 80px);
+    float: right;
+    margin: 10px ;
+}
+.content h4{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.content p{
+    font-size: 13px;
+    line-height: 16px;
+}
+.content img{
+    width: 100%;
+    margin: 5px 0;
+}
+
+/* --------------END :: FEED--------------- */
+
+/*  -----------START :: RECENT-UPDATES---------------- */
+.recent-updates {
+    float: right;
+    width: 35%;
+    margin:0 10px;
+    padding: 20px;
+    background: white;
+}
+.recent-updates p{
+    font-size: 11px;
+    margin: 5px 0;
+    line-height: 16px;
+}
+
+/*  -----------END :: RECENT-UPDATES---------------- */
+.clear-fix{
+    clear:both;
+}
+
+
+

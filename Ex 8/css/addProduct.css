@@ -1,0 +1,85 @@
+/* -------------START :: SECTION------------------------ */
+section {
+    width: 50%;
+}
+/* -------------END :: SECTION------------------------ */
+
+/* -------------START :: FORM ADD PRODUCT------------------------ */
+.add-product {   
+    font-weight: 300;    
+}
+.add-product h1{
+    
+    text-align: center;
+    font-weight: 300;
+    font-size: 40px;
+    color: #581845;
+}
+.add-product ul li {
+    list-style-type: none;
+    margin: 25px 0;
+}
+.add-product ul li label {
+    font-weight: 400;
+    color: #4a4a4a;
+   
+}
+.add-product input , .add-product select , .add-product textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0 10px;
+    font-size: 20px;
+    line-height: 35px;
+    border: 1px solid black;   
+}
+input:focus , button:focus , select:focus , textarea:focus{
+    outline: none;
+}
+
+.add-product .split {
+    display: inline-block;
+    width: calc((100% - 19px)/2);
+}
+.add-product li .split:first-child{
+    margin-right: 15px;
+}
+.split select {
+    background: white;
+    border-radius: 0;
+    height: 35px;
+    font-weight: 300;
+}
+.add-product textarea {
+    height: 200px;
+    resize: none;
+}
+/* -------------END :: FORM ------------------------ */
+/* --------------------START :: SAVE BUTTON-------------------- */
+#save-btn {
+    width: 30%;
+    margin: 50px auto;
+    background: #581845;
+    color: white;
+    font-size: 15px;
+    padding: 10px 0;
+    border: none;
+    cursor: pointer;
+}
+/* --------------------END :: SAVE BUTTON-------------------- */
+/* ----------------------------------START :: MEDIA-QUEIRES--------------------------- */
+@media only screen and (max-width:500px){
+    section {
+        width: 90%;                
+    }
+    
+    .add-product .split {
+        display: block;
+        width: 100%;
+    }
+    .add-product li .split:first-child{
+        margin-right: 0;
+    }
+    
+}
+/* ----------------------------------END :: MEDIA-QUEIRES--------------------------- */

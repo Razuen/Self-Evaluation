@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+/* -------------START :: HEADER AND FOOTER------------------------ */
+header , footer {
+    background: #581845;
+    color: #f5a623;
+    padding: 30px 40px;
+    font-weight: 300;
+}
+
+/* -------------END :: HEADER------------------------ */
+/* -------------START :: .LOGO------------------------ */
+.logo {
+    display: inline-block;
+    font-size: 19px;
+    cursor: pointer;
+    
+}
+/* -------------END :: .LOGO------------------------ */
+/* -------------START :: NAV------------------------ */
+nav {
+    float: right;  
+}
+nav h4{
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 300; 
+    font-size: 19px;
+}
+nav h4:first-child{
+    margin-right: 10px;
+}
+/* -------------END :: NAV------------------------ */
+/* -------------------------START :: SECTION ------------------------  */
+section {
+    width: 90%;
+    margin: 70px auto 15px;
+}
+section h1{
+    font-weight: 400;
+    font-size: 30px;
+    color: #581845;
+    
+
+}
+
+/* -------------------------END :: SECTION ------------------------*/
+/* ------------------START :: FOOTER------------------------ */
+
+.social-media {
+    display: inline-block;
+    
+}
+.social-media img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+}
+footer .logo {
+    float: right;
+    padding: 5px 0 5px 5px;
+    
+}
+/* ------------------END :: FOOTER------------------------ */
+
+@media only screen and (min-width:300px) and (max-width:450px){
+    nav {
+        float: none;
+    }
+    
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E-kart</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">          
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel = "stylesheet" href = "../css/index.css"/>  
+        <link rel = "stylesheet" href = "../css/addProduct.css"/>
+        <script src = "../js/index.js"></script>
+        <script src = "../js/addProduct.js"></script> 
+    </head>
+    <body>
+        <div class = "wrapper">
+            <header></header>
+            <!-- ----------------START :: SECTION--------------------- -->
+            <section>
+                <!-- ----------------START :: FORM--------------------- -->
+                <form class = "add-product" onsubmit = " return validateForm(this)" action="../html/index.html">
+                    <!-- TODO:add name attr to inputs -->
+                    <h1>Add New Product</h1>
+                    <ul>
+                        <!-- ----------------START :: PRODUCT NAME--------------------- -->
+                        <li>
+                            <label>Product Name</label>
+                            <input type = "text" name = "product-name" required/>
+                        </li>
+                        <!-- ----------------END :: PRODUCT NAME--------------------- -->
+                        <!-- ----------------START :: BRAND--------------------- -->
+                        <li>
+                            <label>Brand</label>
+                            <input type = "text" name = "brand" required/>
+                        </li>
+                        <!-- ----------------END :: BRAND--------------------- -->
+
+                        <li>
+                            <!-- ----------------START :: CATEGORY--------------------- -->
+                            <div class = "split">
+                                <label>Category</label>
+                                <select required>
+                                    <option value = "0" disabled>Select Category</option>
+                                    <option value = "women">women</option>
+                                    <option value = "men">men</option>
+                                    <option value = "kids">kids</option>
+                                </select>
+                            </div>
+                            <!-- ----------------END :: CATEGORY--------------------- -->
+                            <!-- ----------------START :: RATINGS--------------------- -->                        
+                            <div class = "split">
+                                <label>Ratings</label>
+                                <select required>
+                                    <option value = "0" disabled>Give Ratings</option>
+                                    <option value = "1">1</option>
+                                    <option value = "2">2</option>
+                                    <option value = "3">3</option>
+                                    <option value = "4">4</option>
+                                    <option value = "5">5</option>
+                                </select>
+                            </div>
+                            <!-- ----------------END :: RATINGS--------------------- -->  
+                        </li>
+                        <!-- ----------------START :: THUMBNAIL URL--------------------- -->  
+                        <li>
+                            <label>Price</label>
+                            <input type = "number" min = "1" step="0.01" name = "price" required/>
+                        </li>
+                        <!-- ----------------END :: THUMBNAIL URL--------------------- -->
+                        
+                        <!-- ----------------START :: SHORT DESCRIPTION--------------------- --> 
+                        <li>
+                            <label>Short Description</label>
+                            <textarea name = "product-description" required>
+
+                            </textarea>
+                        </li>
+                        <!-- ----------------END :: SHORT DESCRIPTION--------------------- -->
+                        <!-- ----------------START :: PRODUCT IMAGE URL--------------------- -->  
+                        <li>
+                            <label>Product image url</label>
+                            <input type = "url" name = "image-url" required/>
+                        </li>
+                        <!-- ----------------END :: PRODUCT IMAGE URL--------------------- -->  
+                        <li>
+                            <!-- ----------------START :: SIZE--------------------- -->  
+                            <div class = "split">
+                                <label>size</label>
+                                <select required>
+                                    <option class = "display-none"></option>
+                                    <!--TODO: <option value = "0" disabled>Select Size</option> -->
+                                    <option value = "0" disabled>Select Size</option>
+                                    <option value = "S">S</option>
+                                    <option value = "M">M</option>
+                                    <option value = "L">L</option>
+                                    <option value = "Free">Free</option>
+                                    
+                                </select>
+                            </div>
+                            <!-- ----------------END :: SIZE--------------------- --> 
+                            <!-- ----------------START :: COLOR--------------------- --> 
+                            <div class = "split">
+                                <label>Color</label>
+                                <select required>
+                                    <option value = "0" disabled>Select Color</option>
+                                    <option value = "red">red</option>
+                                    <option value = "blue">blue</option>
+                                    <option value = "yellow">yellow</option>
+                                    <option value = "orange">orange</option>
+                                    <option value = "black">black</option>
+                                </select>
+                            </div>
+                            <!-- ----------------END :: COLOR--------------------- --> 
+                        </li>
+                        
+                    </ul>
+                    <!-- ----------------START :: BUTTON--------------------- --> 
+                    <input type = "submit" id = "save-btn" value = "SAVE"/>
+                    <!-- ----------------END :: BUTTON--------------------- --> 
+        
+                </form>
+                <!-- ----------------END :: FORM--------------------- -->
+            </section>
+            <!-- ----------------END :: SECTION--------------------- -->
+            <footer></footer>
+            
+        </div>
+        <script src = "../js/addProduct.js"></script>
+    </body>
+</html>

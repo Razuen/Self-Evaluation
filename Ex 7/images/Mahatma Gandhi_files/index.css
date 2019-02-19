@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+.wrapper{
+    font-family: 'Lato', sans-serif;
+    background: rgb(203,212,223);
+
+}
+/*-- -----------START :: HEADER---------------- */
+header {
+    background: rgb(42,163,240);
+    text-align: center;
+}
+header img{
+    height: 50px;
+    width: 50px;
+
+    
+}
+/*-- -----------END :: HEADER---------------- --*/
+section{
+    position: relative;
+}
+/*  -----------START :: COVER-PICTURE---------------- */
+.cover-picture{
+    
+     
+}
+.cover-picture img{
+    height:250px;
+    width: 100%;
+
+}
+.cover-picture button{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(42,163,240);
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+/*  -----------END :: COVER-PICTURE---------------- */
+/*  -----------START :: PROFILE-PICTURE---------------- */
+.profile-picture{
+    position: absolute;
+    bottom:-225px;
+    left: 75px;
+    
+}
+.profile-picture img{
+    height: 170px;
+    width: 170px;
+
+}
+
+/*  -----------END :: PROFILE-PICTURE---------------- */
+/*  -----------START :: WALL---------------- */
+.wall {
+    margin-left: 30%;
+    margin-right: 10%;
+    margin-top: 3%;
+
+   
+}
+/*  -----------END :: WALL---------------- */
+
+/*  -----------START :: MY-PROFILE---------------- */
+.my-profile{
+    width: 300px;
+    padding:10px 0;
+
+
+}
+.name{
+
+}
+.profile-name{
+    color:gray;
+}
+/*  -----------END :: MY-PROFILE---------------- */
+/*  -----------START :: RECENT-UPDATES---------------- */
+.recent-updates {
+    float: right;
+    width: 25%;
+    margin: 10px;
+    
+    padding: 5px;
+    background: white;
+}
+.recent-updates p{
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+/*  -----------END :: RECENT-UPDATES---------------- */
+.clear-fix{
+    clear:both;
+}
+/* --------------START :: POST--------------- */
+.post{
+    position: relative;
+    float: left;
+    
+
+}
+.post textarea {
+    height: 200px;
+    width: 100%;
+}
+.post button{
+    
+}
+.feed-list {
+    width: 60%;
+}
+
+/* --------------START :: POST--------------- */
